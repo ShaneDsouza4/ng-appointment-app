@@ -1,9 +1,10 @@
 <div class="container">
 
-    <div class="card mt-3 p-5">
+    <h2 class="text-center mt-5"> Manage Your Important Appointments</h2>
+    <div class=" card mt-3 p-5">
         <div class="row">
             <div class="col">
-                <h2 class="text-center">Create new appointment</h2>
+                <h2 class="text-center">Add a New Appointment</h2>
             </div>
         </div>
 
@@ -20,7 +21,7 @@
         </div>
     </div>
 
-    <h2 class="text-center mt-5">Appointments</h2>
+    <h2 class="text-center mt-5">Upcoming Appointments</h2>
 
     <div *ngIf="appointments.length">
         <ul class="list-group mt-3">
@@ -31,8 +32,9 @@
             </li>
         </ul>
     </div>
-    <div *ngIf="!appointments.length">
-        <p class="text-center">No Appointmets Available</p>
+    <div *ngIf="!appointments.length" class="text-center">
+        <p>You have no upcoming appointments</p>
+        <p>Add one to stay on track</p>
     </div>
 
 
